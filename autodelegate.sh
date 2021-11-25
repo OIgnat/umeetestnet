@@ -6,7 +6,7 @@ password='WALLET_PASSWORD'
 from_addr='WALLET_ADDERSS'
 chain='CHAIN_ID'
 validator_addr='VALIDATOR_ADDRESS'
-fees='FEES'
+fees='1000uumee'
 delay_sec=30
 
 echo $password |  $umeepath tx distribution  withdraw-all-rewards \
