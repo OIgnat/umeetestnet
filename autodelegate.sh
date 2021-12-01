@@ -9,10 +9,11 @@ validator_addr='VALIDATOR_ADDRESS'
 fees='1000uumee'
 delay_sec=30
 
-echo $password |  $umeepath tx distribution  withdraw-all-rewards \
+echo $password |  $umeepath tx distribution  withdraw-rewards $validator_addr \
 --from $from_addr \
 --fees=$fees \
 --chain-id=$chain \
+--commission \
 -y
 
 sleep $delay_sec
